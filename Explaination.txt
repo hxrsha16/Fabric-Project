@@ -1,0 +1,26 @@
+┌─────────────────────────────────────────────────────────────────┐
+│                    SHOPFLOW DATA SOURCES                        │
+├──────────────────┬──────────────────────────────────────────────┤
+│  SOURCE A        │  Supabase Postgres (Basic Auth)              │
+│  9 tables        │  customers, sellers, products, orders...     │
+│                  │  3 load types: FULL, INCREMENTAL, HASH_DIFF  │
+├──────────────────┼──────────────────────────────────────────────┤
+│  SOURCE B        │  GitHub REST API (API Key / PAT)             │
+│  4 endpoints     │  commits, issues, pull requests, stargazers  │
+│                  │  Pagination + Rate limit + Nested JSON        │
+├──────────────────┼──────────────────────────────────────────────┤
+│  SOURCE C        │  Google Sheets API (OAuth 2.0 + Refresh)     │
+│  2 sheets        │  marketing_campaigns, seller_promotions       │
+│                  │  Auto token refresh without human login       │
+├──────────────────┼──────────────────────────────────────────────┤
+│  SOURCE D        │  PDF Documents (No Auth)                     │
+│  ~15 files       │  Policy docs, SEC filings                    │
+│                  │  Feeds RAG AI assistant                       │
+└──────────────────┴──────────────────────────────────────────────┘
+
+TOTAL: 15 tables/endpoints + 15 PDF files
+       All metadata-driven → adding a new one = 1 config row, 0 code
+
+
+Database: shopflow
+password: My_Fabric123*
