@@ -22,5 +22,15 @@ TOTAL: 15 tables/endpoints + 15 PDF files
        All metadata-driven → adding a new one = 1 config row, 0 code
 
 
+Database connection String: DB_URI = "postgresql://postgres:My_Fabric123*@db.bimartklrhorzctmhubv.supabase.co:5432/postgres"
+
+
 Database: shopflow
 password: My_Fabric123*
+
+=> Connection String
+
+host=db.bimartklrhorzctmhubv.supabase.co
+port=5432
+database=postgres
+user=Fabric
